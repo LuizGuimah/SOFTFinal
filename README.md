@@ -47,31 +47,48 @@ Representa os colaboradores do sistema, sendo a permissão (cargo) essencial par
 Todos os arquivos de código-fonte (Usuario.java, Pessoa.java, Familia.java, Doacao.java, Necessidade.java) foram submetidos a testes unitários com o objetivo de alcançar 100% de cobertura.
 
 1. UsuarioTest.java
+
 Lógica de Permissão: Testa se apenas o usuário com cargo "Coordenador" pode executar o método criarRelatorio().
 
 Testa a contagem das necessidades mais frequentes (pela Categoria) em múltiplas famílias e cenários de lista vazia/empate.
 
 Acesso: Testa o método autenticar() para sucesso e falha de login.
-
+________________________________________________________________//________________________________________________________________
 2. PessoaTest.java
+
 Atualização Seletiva: Testa o método atualizarDados(), garantindo que apenas os campos não-nulos sejam alterados.
 
 Inicialização: Verifica a correta inicialização de todos os 8 atributos da pessoa.
 
+________________________________________________________________//________________________________________________________________
 3. FamiliaTest.java
+
 Gerenciamento de Listas: Testa a adição de Pessoa, Necessidade e Doacao às listas internas da Familia.
 
 Responsável: Testa a lógica de definição do Responsavel (via parâmetro isResponsavel == 1).
 
 Consistência: Garante que a adição de membros duplicados seja ignorada.
 
+________________________________________________________________//________________________________________________________________
 4. DoacaoTest.java
+
+Testa os getters
+
+Registra entrega: Testa o método regsitrarEntrega(), validando se retorna true.
+
 Recibo: Testa o método gerarRecibo(), validando que todos os dados da doação estejam formatados corretamente na string de saída.
 
+________________________________________________________________//________________________________________________________________
 5. NecessidadeTest.java
-Ciclo de Vida: Testa se o status inicial é "Aberta" e se o método fecharNecessidade() altera o status para "Fechada".
 
-Inicialização: Confirma se a dataRegistro é definida como a data atual.
+Testa inicialização e se o status inicial é "Aberta"
+
+Testa se método fecharNecessidade() altera o status para "Fechada".
+
+Testa o setStatus()
+
+Testa se resgitrarNecessidade() retorna true. 
+________________________________________________________________//________________________________________________________________
 
 Execução e Dependências
 
